@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    color: #555;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #B792DB;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar .logo h1 {
+    font-size: 24px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li.active a {
+    background-color: #7C57A0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebar .user-info {
+    font-size: 14px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .search-bar input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+
+.quick-links {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quick-links button {
+    background-color: #e3e3e3;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.quick-links button i {
+    margin-right: 5px;
+}
+
+.quick-links button:hover {
+    background-color: #ddd;
+}
+
+.overview {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.overview h3 {
+    margin: 0;
+}
+
+.download-report {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #7C57A0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.download-report i {
+    margin-right: 5px;
+}
+
+.chart-container {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    height: 250px;
+    position: relative;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.y-axis p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    flex: 1;
+    gap: 50px;
+}
+
+.bar {
+    width: 20px;
+    background-color: #B792DB;
+    border-radius: 5px;
+}
+
+.x-axis {
+    position: absolute;
+    bottom: -30px;
+    left: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+}
+
+.x-axis p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    width: 20px;
+}
+
+.sidebar-right {
+    width: 300px;
+}
+
+.trading-accounts, .open-trades {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.trading-accounts h3, .open-trades h3 {
+    margin: 0 0 20px 0;
+}
+
+.account, .trade {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.trade-type {
+    font-weight: bold;
+}
+
+.profit {
+    color: green;
+}
+
+.loss {
+    color: red;
+}
